@@ -18,26 +18,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8lf-t8-1kY">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlb-c2-gYF">
-                                <rect key="frame" x="192" y="626" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ke3-3q-qTI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="削除"/>
                                 <connections>
-                                    <action selector="tappedDeleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jf2-8Z-FJt"/>
+                                    <action selector="deleteBUtton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6Q-mU-6DF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8lf-t8-1kY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0Wr-PE-7yx"/>
-                            <constraint firstItem="8lf-t8-1kY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E7L-m7-sux"/>
+                            <constraint firstItem="Ke3-3q-qTI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9YC-ZQ-9oM"/>
                             <constraint firstItem="8lf-t8-1kY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PLX-N8-P43"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ke3-3q-qTI" secondAttribute="trailing" id="SCx-3U-WFZ"/>
+                            <constraint firstItem="8lf-t8-1kY" firstAttribute="top" secondItem="Ke3-3q-qTI" secondAttribute="bottom" id="Xmj-2b-Jbn"/>
                             <constraint firstItem="8lf-t8-1kY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jd2-cy-rd6"/>
+                            <constraint firstItem="Ke3-3q-qTI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xwa-2l-34V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -47,6 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-457" y="168"/>
         </scene>
     </scenes>
 </document>
