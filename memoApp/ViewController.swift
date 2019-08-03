@@ -25,18 +25,31 @@ class ViewController: UIViewController, UITextViewDelegate {
 //    AppDelegateに定義したlastTextを参照し、textViewに格納します
         textView.text = appDelegate.lastText
     }
+    
+    @IBAction func deleteBUtton(_ sender: Any) {
+        
+        textView.text = ""
+        
+        saveText()
+        
+    }
 //  TextViewに何か入力されたら動作します
     func textViewDidChange(_ textView: UITextView) {
-//        AppDelegateを呼び出して格納
+         saveText()
+    }
+//    端末にデータを保存する
+    func saveText(){
+        // AppDelegateを呼び出して格納
         let appDelgate = UIApplication.shared.delegate as! AppDelegate
-//        AppDelegateに記述した"lastText"に入力内容を格納します
+        // AppDelegateに記述した"lastText"に入力内容を格納します
         appDelgate.lastText = textView.text
     }
     
     
-    @IBAction func tappedDeleteButton(_ sender: Any) {
-        
-    }
+    
+   
+    
+    
     
 /** コメントを入れる際は、最初にスペースを開けておく事を意識する
 
